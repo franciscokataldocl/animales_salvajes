@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+:root{
+  --white: #dadada;
+  --yellow:#ffce00;
+  --yellow-dark:#b59305;
+  --grey:#303030;
+  --animate-delay: 0.1s;
+}
+/*colors*/
+.c_white{
+  color:var(--white);
+}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size:16px;
+  height: 100vh;
+  background:url('../imgs/fondo.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+/*helpers*/
+.h-100{
+  height: 100vh;
+}
+.animate-custom{
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+/*fonts*/
+h2{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+h3{
+
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.glass {
+  background: rgb(161 168 190 / 51%);
+  box-shadow: 0 8px 32px 0 rgb(4 4 5 / 37%);
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.glass-2 {
+  background: rgb(40 40 40 / 35%);
+  box-shadow: 0 8px 32px 0 rgb(48 48 48 / 37%);
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border: 1px solid rgb(243 243 243 / 9%);
+}
+label{
+  font-size: .8rem;
+    font-weight: 500;
+}
+
+.image-form{
+  background: #9e8d9380;
+    width: 100%;
+    height: 150px;
+    margin-bottom:30px;
+}
+
+textarea.form-control {
+
+  font-size: .9rem;
+}
+.btn-agregar{
+background:var(--yellow);
+color:var(--grey);
+}
+.btn-agregar:hover{
+  background:var(--yellow-dark);
+}
+.card_animals{
+  background: var(--yellow);
+  border-radius: 5px;
+  min-height: 200px;
+  min-width: 200px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+  
+
+.container-cards{
+  display: flex;
+    justify-content: space-between;
+}
+.animal-image-card{
+  width: 100%;
+  height: 150px;
+  -webkit-background-size: cover!important;
+  -moz-background-size: cover!important;
+  -o-background-size: cover!important;
+  background-size: cover!important;
+}
+audio{
+  display: block;
+    width: 100%;
+}
+
+/* Specifies the size of the audio container */
+audio {
+  width: 100%;
+  height: 25px;
+}
+
+audio::-webkit-media-controls-panel {
+  -webkit-justify-content: center;
+  height: 25px;
+}
+
+/* Removes the timeline */
+audio::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+/* Removes the time stamp */
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+.sonido{
+  height: 50px;
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0 5px;
+}
+
+.modal-content{
+  background: rgb(255 255 255 / 76%);
+  box-shadow: 0 8px 32px 0 rgb(225 174 25 / 11%);
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border: 1px solid rgb(255 255 255 / 0%);
+}
+
+.modal-backdrop {
+  background-color: #000000;
+}
+.modal-backdrop.show {
+  opacity: .6;
+}
+
+
+.col-data-table{
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.col-add-animal{
+  border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

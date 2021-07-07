@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba - Torneo de Artes Marciales</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+</head>
+
+<body>
+
+<div class="container h-100 d-flex align-items-center">
+    <div class="row w-100">
+        <div class="col-lg-8 p-3 glass animate__animated animate__fadeInUp animate__delay-1s col-data-table">
+            <div class="row text-center mb-3">
+                <h2 class="c_white text-center w-100">Animales de investigación</h2>
+            </div>
+            <div class="row container-cards mx-4">
+                <div class="card_animals col-lg-3 m-2 p-0" data-toggle="modal" data-target="#exampleModal">
+                    <div class="animal-image-card" style="background:url('./assets/imgs/Leon.png')no-repeat center center">
+                    </div>
+                    <div class="sonido">
+                        <audio controls  >
+                    
+                            <source src="./assets/sounds/Siseo.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </div>
+                </div>
+                <div class="card_animals col-lg-3 m-2 p-0" data-toggle="modal" data-target="#exampleModal">
+                    <div class="animal-image-card" style="background:url('./assets/imgs/Leon.png')no-repeat center center">
+                    </div>
+                    <div class="sonido">
+                        <audio controls >
+                    
+                            <source src="./assets/sounds/Siseo.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </div>
+                </div>
+                <div class="card_animals col-lg-3 m-2 p-0" data-toggle="modal" data-target="#exampleModal">
+                    <div class="animal-image-card" style="background:url('./assets/imgs/Leon.png')no-repeat center center">
+                    </div>
+                    <div class="sonido">
+                        <audio controls >
+                    
+                            <source src="./assets/sounds/Siseo.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </div>
+                </div>
+                <div class="card_animals col-lg-3 m-2 p-0" data-toggle="modal" data-target="#exampleModal">
+                    <div class="animal-image-card" style="background:url('./assets/imgs/Leon.png')no-repeat center center">
+                    </div>
+                    <div class="sonido">
+                        <audio controls >
+                    
+                            <source src="./assets/sounds/Siseo.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 p-3 glass-2 animate__animated animate__fadeInUp animate__delay-1s col-add-animal">
+            <h3 class="c_white">Registrar nuevo animal</h3>
+            <form>
+                
+                <div class="form-group">
+                    <label class="c_white">Nombre del animal</label>
+                    <select class="form-control" id="">
+                        <option value="" selected disabled hidden>Seleccionar</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="c_white">Longevidad estimada</label>
+                    <select class="form-control" id="">
+                        <option value="" selected disabled hidden>Seleccionar rango etario</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="c_white">Comentarios</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+                  <div class="image-form">
+                      
+                  </div>
+                <button type="submit" class="btn btn-agregar w-100 animate-custom">Agregar</button>
+              </form>
+        </div>
+    </div>
+</div>
+
+
+<!--modal-->
+<div class="modal fade " id="exampleModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">...</div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    
+    
+        <script type="module" src="assets/js/index.js"></script>
+
+
+</body>
+
+</html>
